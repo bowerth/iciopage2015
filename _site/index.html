@@ -56,17 +56,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div id="logo"><a href="/" data-escp="">ICIO Calculation</a></div>
+        <div id="logo"><a href="/kit/" data-escp="">ICIO Calculation</a></div>
       </div>
 
       <div class="col-md-9 col-sm-10">
         <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-           <!-- <li><a href="/trainers/">Trainers</a></li>
-            <li><a href="/classes/">Classes</a></li>
-            <li><a href="/schedule/">Schedule</a></li> -->
-            <li><a class="active" href="/kit/">Kit</a></li>
-           <!-- <li><a href="/contact/">Contact</a></li> -->
+            <!-- <li><a href="/trainers/">Trainers</a></li> -->
+            <!-- <li><a href="/classes/">Classes</a></li> -->
+            <!-- <li><a href="/schedule/">Schedule</a></li> -->
+            <!-- <li><a class="active" href="/kit/">Kit</a></li> -->
+            <!-- <li><a href="/contact/">Contact</a></li> -->
           </ul>
         </div>
       </div>
@@ -79,36 +79,47 @@
       <div class="jumbotron colorful classes">
         <div class="text-center">
 
-          <div class="row">
-            <div class="col-md-4">
-              <a href="settings/">
-                <div class="panel">
-                  <span class="octicon octicon-settings"></span>
-                  <h4>Settings</h4>
-                  <p><small>Select from coefficient and demand data</small></p>
-                </div>
-              </a>
-            </div>
+          <!-- <div class="row"> -->
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="settings/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-settings"></span> -->
+          <!--         <h4>Settings</h4> -->
+          <!--         <p><small>Select from coefficient and demand data</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
 
-            <div class="col-md-4">
-              <a href="converters/">
-                <div class="panel">
-                  <span class="octicon octicon-color-mode"></span>
-                  <h4>Converters</h4>
-                  <p><small>Compute and aggregate results</small></p>
-                </div>
-              </a>
-            </div>
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="converters/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-color-mode"></span> -->
+          <!--         <h4>Converters</h4> -->
+          <!--         <p><small>Compute and aggregate results</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
 
-            <div class="col-md-4">
-              <a href="graphics/">
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="graphics/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-graph"></span> -->
+          <!--         <h4>Graphics</h4> -->
+          <!--         <p><small>Interpret and communicate results</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
+
+            <div class="col-md-12">
+              <a href="http://oecd-icio.cloudapp.net:3838/icioapp2015/">
                 <div class="panel">
                   <span class="octicon octicon-graph"></span>
-                  <h4>Graphics</h4>
-                  <p><small>Interpret and communicate results</small></p>
+                  <h4>icioapp2015</h4>
+                  <p><small>Head over to the application</small></p>
                 </div>
               </a>
             </div>
+
           </div>
           <!-- <div class="row">
             <div class="col-md-6">
@@ -133,25 +144,23 @@
 
   <h2>ICIO</h2>
   <p>A practical guide to the calculation of indicators and complementary material for the Inter-Country Input-Output Model</p>
+  <h4>Indicators from the ICIO system</h4>
+  <p>Input-Output calculations use linear algebra to obtain potentially large numbers of results. The calculations are fairly complex from the perspective of non-expert users and thus difficult to replicate. The <a href="http://www.oecd.org/sti/ind/measuringtradeinvalue-addedanoecd-wtojointinitiative.htm">Trade in Value-Added</a> initiative has highlighted the importance of this type of indicators.</p>
+  <h4>Reasons for implementation</h4>
+  <p>With the popularity of Trade in Value-Added indicator results for Global Value Chain discussions, demand for specific calculations have been taking up expert resources that are also required in the development of data sources and methodologies. The application takes over the indicator calculation and dissemination part where user demands go beyond published core indicators. To observe the ceteris paribus effects of data modifications on indicator results, it is helpful to use a self-standing calculation system. Underlying data of relatively small size are the only inputs into the system.</p>
+  <h4>Data sources</h4>
+  <p>Numbers underlying the calculations have the form of coefficient and data matrices matrices. This data has been compiled by the Directorate for Science, Technology and Innovation. Initially, it will not be made available to users. We consider giving access to authenticated users in the future.</p>
 
-  <div class="row">
+<div class="row">
     <div class="col-md-7">
-      <h3>Cheat Sheets</h3>
+      <h3>Documents</h3>
       <p>
-        Looking for a quick reference sheet of input-output formulas?<br>
-        We've got just the document, available for download in these languages:</p>
+        Looking for a quick summary of the application or the disclaimer?<br>
+        We've got just the document, available for download:</p>
+      <!-- <h4>Disclaimer</h4> -->
+      <p><a href="downloads/disclaimer.pdf"><span class="octicon octicon-cloud-download"></span> Disclaimer</a></p>
+      <p><a href="downloads/description.pdf"><span class="octicon octicon-cloud-download"></span> Description</a></p>
 
-      <p><a href="downloads/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download"></span> English</a></p>
-
-      <!--
-      <p><a href="downloads/es/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download"></span> Spanish</a></p>
-
-      <p><a href="downloads/fr/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download"></span> French</a></p>
-
-      <p><a href="downloads/ja/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download"></span> Japanese</a></p>
-      
-      <p><a href="downloads/pt/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download"></span> Portugues</a></p>
-      -->
     </div>
 
     <div class="col-md-5">
@@ -163,10 +172,11 @@
         <a href="https://www.oecd.org/sti">Head over to the STI homepage</a>
       </p>
 
-      <h4>Let's be social</h4>
-      <p>
-        Like us on <a href="https://facebook.com/OECDPublications">Facebook</a> and follow us on <a href="https://twitter.com/oecd">Twitter</a> or <a href="https://plus.google.com/+oecd">Google+</a>. Stay up to date with the latest OECD events.
-      </p>
+      <!-- <h4>Let's be social</h4> -->
+      <!-- <p> -->
+      <!--   Like us on <a href="https://facebook.com/OECDPublications">Facebook</a> and follow us on <a href="https://twitter.com/oecd">Twitter</a> or <a href="https://plus.google.com/+oecd">Google+</a>. Stay up to date with the latest OECD events. -->
+      <!-- </p> -->
+
     </div>
   </div>
 </div>
@@ -174,10 +184,15 @@
 <div class="container">
 
  <h2>ICIO Indicator 2015</h2>
-  <p>An interactive application to calculate indicators from the ICIO framework</p>
+  <p>
+    An interactive application to calculate indicators from the ICIO framework<br>
+    <!-- <a href="http://10.101.26.220:3838/icioapp2015/">Head over to the application</a> -->
+    <a href="http://oecd-icio.cloudapp.net:3838/icioapp2015/">Head over to the application</a>
+  </p>
 
   <!-- <iframe src="http://localhost:3838/" width = "100%" style="border: 1px solid #AAA; height: 75em"></iframe> -->
-  <iframe src="http://10.101.26.220:3838/icioapp2015/" width = "100%" style="border: 1px solid #AAA; height: 75em"></iframe>
+  <!-- <iframe src="http://10.101.26.220:3838/icioapp2015/" width = "100%" style="border: 1px solid #AAA; height: 75em"></iframe> -->
+  <iframe src="http://oecd-icio.cloudapp.net:3838/icioapp2015/" width = "100%" style="border: 1px solid #AAA; height: 75em"></iframe>
 </div>
 
 
@@ -199,11 +214,12 @@
 
       <div class="col-md-2">
         <!-- <a href="http://www.oecd.org/"><span class="mega-octicon octicon-mark-github"></span></a> -->
-        <a href="http://www.oecd.org"><img src="/kit/images/OECD_grey.png", width = 80></a>
+        <a href="http://www.oecd.org/trade/valueadded"><img src="/kit/images/OECD_grey.png", width = 80></a>
       </div>
 
       <div class="col-md-5">
         <ul class="text-right">
+          <li><a href="http://www.oecd.org/sti/inno/sti-statistics.htm">STI Statistics</a></li>
           <!-- <li><a href="https://twitter.com/oecd"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li> -->
           <!--      
           <li><a href="https://status.github.com">Status</a></li>
