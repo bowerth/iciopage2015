@@ -1,0 +1,93 @@
+<header class="colorful">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-2">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="logo"><a href="{{ site.url }}/kit/" data-escp="">ICIO Calculation</a></div>
+      </div>
+
+      <div class="col-md-9 col-sm-10">
+        <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a{% if page.body_class == 'trainers' %} class="active"{% endif %} href="{{ site.url }}/trainers/">Trainers</a></li> -->
+            <!-- <li><a{% if page.body_class == 'classes' %} class="active"{% endif %} href="{{ site.url }}/classes/">Classes</a></li> -->
+            <!-- <li><a{% if page.body_class == 'schedule' %} class="active"{% endif %} href="{{ site.url }}/schedule/">Schedule</a></li> -->
+            <!-- <li><a class="active" href="{{ site.url }}/kit/">Kit</a></li> -->
+            <!-- <li><a{% if page.body_class == 'contact' %} class="active"{% endif %} href="{{ site.url }}/contact/">Contact</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% if page.title %}
+      <h2>{{ page.title }}</h2>
+      {% if page.byline %}<p>{{ page.byline }}</p>{% endif %}
+    {% endif %}
+
+
+    {% if page.body_class == "home" %}
+      <div class="jumbotron colorful classes">
+        <div class="text-center">
+
+          <!-- <div class="row"> -->
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="settings/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-settings"></span> -->
+          <!--         <h4>Settings</h4> -->
+          <!--         <p><small>Select from coefficient and demand data</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
+
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="converters/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-color-mode"></span> -->
+          <!--         <h4>Converters</h4> -->
+          <!--         <p><small>Compute and aggregate results</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
+
+          <!--   <div class="col-md-4"> -->
+          <!--     <a href="graphics/"> -->
+          <!--       <div class="panel"> -->
+          <!--         <span class="octicon octicon-graph"></span> -->
+          <!--         <h4>Graphics</h4> -->
+          <!--         <p><small>Interpret and communicate results</small></p> -->
+          <!--       </div> -->
+          <!--     </a> -->
+          <!--   </div> -->
+
+            <div class="col-md-12">
+              <a href="http://oecd-icio.cloudapp.net:3838/icioapp2015/">
+                <div class="panel">
+                  <span class="octicon octicon-graph"></span>
+                  <h4>icioapp2015</h4>
+                  <p><small>Head over to the application</small></p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-6">
+              <img src="{{ site.url }}/images/git-training-pics.png" alt="GitHub Training at Live Event" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+              <h2>Open source teaching resources</h2>
+              <p>Open source training content. Present your way to better version control.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</header>

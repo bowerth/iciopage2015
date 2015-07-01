@@ -1,0 +1,36 @@
+# For Atom Feed
+domain: oecd-icio.cloudapp.net
+author: OECD STAN Team
+email: stan.contact@oecd.org
+title: ICIO Indicator
+
+# standard jekyll configuration
+
+permalink: /articles/:title
+highlighter: pygments
+exclude:
+- bin
+- config.rb
+- Gemfile
+- Gemfile.lock
+- gems
+- Procfile
+- Rakefile
+- README.md
+- script
+- vendor
+
+include:
+- _stylesheets
+- _javascript
+
+markdown: rdiscount
+
+sass:
+  sass_dir: assets/vendor/
+  style: :compressed
+
+# Custom site configuration
+lang: en
+
+baseurl: /kit
