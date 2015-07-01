@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ICIO Indicators</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../../_stylesheets/page.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../../assets/vendor/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+
+
+  <!--Scrollsnap-->
+  <script src="../../_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+  <script src="../../_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+  <script src="../../_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
+
+  <!--Curriculum setup JS-->
+  <script src="../../_javascript/curriculum.js"></script>
+
+  <!--Curriculum special styling-->
+  <link rel="stylesheet" href="../../assets/vendor/octicons/octicons/octicons.css" type="text/css" />
+  <link rel="stylesheet" href="../../_stylesheets/curriculum.css" type="text/css" />
+
+  <!-- google analytics async -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-19']);
+  _gaq.push(['_setDomainName', 'github.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body  data-spy="scroll" data-target="#toc">
+  <header class="colorful">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-2">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="logo"><a href="/" data-escp="">ICIO Calculation</a></div>
+      </div>
+
+      <div class="col-md-9 col-sm-10">
+        <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+           <!-- <li><a href="/trainers/">Trainers</a></li>
+            <li><a href="/classes/">Classes</a></li>
+            <li><a href="/schedule/">Schedule</a></li> -->
+            <li><a class="active" href="/kit/">Kit</a></li>
+           <!-- <li><a href="/contact/">Contact</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+      <h2>Hoja de referencia para Git de Github</h2>
+      <p>Git es el sistema de control de versiones distribuido de código abierto que facilita realizar actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.</p>
+    
+
+
+    
+  </div>
+</header>
+
+
+  
+
+
+  <div class="container">
+  <div class="cheat-sheet">
+    <h1>Hoja de referencia para Git de Github</h1>
+
+<p>Git es el sistema de control de versiones distribuido de código abierto que facilita realizar actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.</p>
+
+<h2>Instalar Git</h2>
+
+<p>GitHub proporciona clientes de escritorio que incluyen una interfaz gráfica de usuario para las acciones más comunes que se pueden realizar en un repositorio y una edición de Git en la línea de comandos actualizada automáticamente para escenarios más avanzados.</p>
+
+<h3>GitHub para Windows</h3>
+
+<p>http://windows.github.com</p>
+
+<h3>GitHub para Mac</h3>
+
+<p>http://mac.github.com</p>
+
+<p>Distribuciones de Git para sistemas Linux y POSIX se encuentran disponibles en el sitio web oficial Git SCM.</p>
+
+<h3>Git para todas las plataformas</h3>
+
+<p>http://git-scm.com</p>
+
+<h2>Configurar herramientas</h2>
+
+<p>Configura la información del usuario para todos los respositorios locales</p>
+
+<p><code>$ git config --global user.name "[name]"</code></p>
+
+<p>Establece el nombre que estará asociado a tus commits</p>
+
+<p><code>$ git config --global user.email "[email address]"</code></p>
+
+<p>Establece el e-mail que estará asociado a sus commits</p>
+
+<h2>Crear repositorios</h2>
+
+<p>Inicializa un nuevo repositorio u obtiene uno de una URL existente</p>
+
+<p><code>$ git init [project-name]</code></p>
+
+<p>Crea un nuevo repositorio local con el nombre especificado</p>
+
+<p><code>$ git clone [url]</code></p>
+
+<p>Descarga un proyecto y toda su historial de versiones</p>
+
+<h2>Efectuar cambios</h2>
+
+<p>Revisa cambios y crea un commit</p>
+
+<p><code>$ git status</code></p>
+
+<p>Enumera todos los archivos nuevos o modificados de los cuales se van a guardar cambios</p>
+
+<p><code>$ git diff</code></p>
+
+<p>Muestra las diferencias entre archivos que no se han enviado aún al área de espera</p>
+
+<p><code>$ git add [file]</code></p>
+
+<p>Guarda el estado del archivo en preparación para realizar un commit</p>
+
+<p><code>$ git diff --staged</code></p>
+
+<p>Muestra las diferencias del archivo entre el área de espera y la última versión del archivo</p>
+
+<p><code>$ git reset [file]</code></p>
+
+<p>Mueve el archivo del área de espera, pero preserva su contenido</p>
+
+<p><code>$ git commit -m"[descriptive message]"</code></p>
+
+<p>Registra los cambios del archivo permanentemente en el historial de versiones</p>
+
+<h2>Cambios grupales</h2>
+
+<p>Nombra una serie de commits y combina esfuerzos ya completados</p>
+
+<p><code>$ git branch</code></p>
+
+<p>Enumera todas las ramas en el repositorio actual</p>
+
+<p><code>$ git branch [branch-name]</code></p>
+
+<p>Crea una nueva rama</p>
+
+<p><code>$ git checkout [branch-name]</code></p>
+
+<p>Cambia a la rama especificada y actualiza el directorio activo</p>
+
+<p><code>$ git merge [branch-name]</code></p>
+
+<p>Combina el historial de la rama especificada con la rama actual</p>
+
+<p><code>$ git branch -d [branch-name]</code></p>
+
+<p>Borra la rama especificada</p>
+
+<h2>Refactorización de archivos</h2>
+
+<p>Reubica y retira los archivos de los cuales se tiene una versión</p>
+
+<p><code>$ git rm [file]</code></p>
+
+<p>Borra el archivo del directorio activo y lo pone en el área de espera en un estado de eliminación</p>
+
+<p><code>$ git rm --cached [file]</code></p>
+
+<p>Retira el archivo del historial de control de versiones, pero preserva el archivo a nivel local</p>
+
+<p><code>$ git mv [file-original] [file-renamed]</code></p>
+
+<p>Cambia el nombre del archivo y lo prepara para ser guardado</p>
+
+<h2>Suprimir el seguimiento de cambios</h2>
+
+<p>Excluye los archivos temporales y las rutas</p>
+
+<pre><code>*.log
+build/
+temp-*
+</code></pre>
+
+<p>Un archivo de texto llamado <code>.gitignore</code> suprime la creación accidental de versiones para archivos y rutas que concuerdan con los patrones especificados</p>
+
+<p><code>$ git ls-files --other --ignored --exclude-standard</code></p>
+
+<p>Enumera todos los archivos ignorados en este proyecto</p>
+
+<h2>Guardar fragmentos</h2>
+
+<p>Almacena y restaura cambios incompletos</p>
+
+<p><code>$ git stash</code></p>
+
+<p>Almacena temporalmente todos los archivos modificados de los cuales se tiene al menos una versión guardada</p>
+
+<p><code>$ git stash pop</code></p>
+
+<p>Restaura los archivos guardados más recientemente</p>
+
+<p><code>$ git stash list</code></p>
+
+<p>Enumera todos los grupos de cambios que estan guardados temporalmente</p>
+
+<p><code>$ git stash drop</code></p>
+
+<p>Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente</p>
+
+<h2>Repasar historial</h2>
+
+<p>Navega e inspecciona la evolución de los archivos de proyecto</p>
+
+<p><code>$ git log</code></p>
+
+<p>Enumera el historial de versiones para la rama actual</p>
+
+<p><code>$ git log --follow [file]</code></p>
+
+<p>Enumera el historial de versiones para el archivo, incluidos los cambios de nombre</p>
+
+<p><code>$ git diff [first-branch]...[second-branch]</code></p>
+
+<p>Muestra las diferencias de contenido entre dos ramas</p>
+
+<p><code>$ git show [commit]</code></p>
+
+<p>Produce metadatos y cambios de contenido del commit especificado</p>
+
+<h2>Rehacer commits</h2>
+
+<p>Borra errores y elabora un historial de reemplazo</p>
+
+<p><code>$ git reset [commit]</code></p>
+
+<p>Deshace todos los commits después de <code>[commit]</code>, preservando los cambios localmente</p>
+
+<p><code>$ git reset --hard [commit]</code></p>
+
+<p>Desecha todo el historial y regresa al commit especificado</p>
+
+<h2>Sincronizar cambios</h2>
+
+<p>Registrar un marcador para un repositorio e intercambiar historial de versiones</p>
+
+<p><code>$ git fetch [bookmark]</code></p>
+
+<p>Descarga todo el historial del marcador del repositorio</p>
+
+<p><code>$ git merge [bookmark]/[branch]</code></p>
+
+<p>Combina la rama del marcador con la rama local actual</p>
+
+<p><code>$ git push [alias] [branch]</code></p>
+
+<p>Sube todos los commits de la rama local a GitHub</p>
+
+<p><code>$ git pull</code></p>
+
+<p>Descarga el historial del marcador e incorpora cambios</p>
+
+<hr />
+
+<h2>GitHub Training</h2>
+
+<p>Obtenga más información sobre el uso de GitHub y Git. Envíe un e-mail al Equipo de Capacitación o visite nuestro sitio web para informarse sobre los horarios de eventos y la disponibilidad de clases privadas.</p>
+
+<ul>
+<li>training@github.com</li>
+<li>training.github.com</li>
+</ul>
+
+
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="text-left">
+          <!-- <li>&copy; 2015 <span>GitHub</span>, Inc.</li> -->
+          <li>&copy; 2015 <span>OECD</span> STI</li>
+          <!-- <li><a href="https://github.com/site/terms">Terms</a></li>
+          <li><a href="https://training.github.com/kit/license.html">License</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+          <li><a href="https://training.github.com/contact">Contact</a></li> 
+          -->
+          <li><a href="http://www.oecd.org/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <!-- <a href="http://www.oecd.org/"><span class="mega-octicon octicon-mark-github"></span></a> -->
+        <a href="http://www.oecd.org"><img src="/kit/images/OECD_grey.png", width = 80></a>
+      </div>
+
+      <div class="col-md-5">
+        <ul class="text-right">
+          <!-- <li><a href="https://twitter.com/oecd"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li> -->
+          <!--      
+          <li><a href="https://status.github.com">Status</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+</html>

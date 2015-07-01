@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<section class="hero overview">
+  <div class="container">
+    <div class="content">
+      <h2>Libro de trabajo de Fundamentos de GitHub</h2>
+      <p>Narratives &amp; examples for teaching GitHub curriculum</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <!-- <div class="tab-panel">
+
+      <input type="radio" class="material-type" name="material-scope" id="outline" value="outline">
+      <label class="tab column-3up" for="outline">
+        <span>Outline</span>
+      </label>
+
+      <input type="radio" class="material-type" name="material-scope" id="summary" value="summary" checked="checked">
+      <label class="tab column-3up" for="summary">
+        <span>Summary</span>
+      </label>
+
+      <input type="radio" class="material-type" name="material-scope" id="details" value="details">
+      <label class="tab column-3up" for="details">
+        <span>Details</span>
+      </label>
+    </div> -->
+
+    <div class="content">
+      <span id="scope">
+        <h2>Conceptos de Control de Versiones</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Git, el rastreador de información</li>
+<li>GitHub, la plataforma de colaboración</li>
+<li>Control de versiones distribuido</li>
+<li><a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git">Una breve historia de Git</a></li>
+<li><a href="http://git-scm.com">La página principal de Git</a></li>
+</ul>
+
+
+<h3>Detalles</h3>
+
+<p><strong>Git es un sistema de código abierto y distribuido</strong> de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y ha demostrado ser, por algunas investigaciones, el sistema de control de versiones moderno más popular.</p>
+
+<p>Git es el sistema de código abierto de comandos de línea que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de "CVS" y "Subversion" por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas históricas de control de versiones de código abierto.</p>
+
+<p>Mantener una versión actual de Git es importante. Aun cuando escucharás correctamente que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras en los mensajes de error, afinamientos en el rendimiento y características de usabilidad que hacen que usar Git sea ahora más rápido y agradable.</p>
+
+<p>Verificar que Git está instalado y funcionando correctamente se puede hacer solicitando a Git que muestre su versión actual empleando este comando:</p>
+
+<pre><code class="shell">$ git --version
+
+git version 1.8.2
+</code></pre>
+
+<h2>Instaladores de GitHub</h2>
+
+<ul>
+<li><a href="http://windows.github.com">Instalador de GitHub para Windows</a></li>
+<li><a href="http://mac.github.com">Instalador de GitHub para Mac</a></li>
+<li><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Libro Pro Git: Instalando Git</a></li>
+<li><strong>Windows</strong>: El instalador de GitHub para Windows puede encontrarse en http://windows.github.com.</li>
+<li><strong>Mac</strong>: El instalador de GitHub para Mac puede encontrarse en http://mac.github.com.</li>
+<li><strong>Linux</strong>: El código fuente de Git y un listado de administradores de paquetes puede encontrarse en http://git-scm.com/download/linux.</li>
+</ul>
+
+
+<h3>Detalles</h3>
+
+<p>La versión de línea de comandos de Git tiene una huella muy ligera. Para la mayoría de las plataformas, puedes simplemente copiar los binarios a una carpeta que esté dentro del $PATH de búsqueda ejecutable. Git está escrito principalmente en C, lo que significa que existe un solo instalador para cada sistema operativo.</p>
+
+<h2>La plataforma GitHub</h2>
+
+<ul>
+<li><a href="https://github.com/features">Lista de características de GitHub.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=ezxRcdJ8glM&amp;list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx">Cómo inscribirse en GitHub</a></li>
+</ul>
+
+
+<h3>Detalles</h3>
+
+<p>Las cuentas de GitHub son gratuitas. Regístrate por una en <a href="https://github.com/join">github.com/join</a>.</p>
+
+<p>GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trae consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.</p>
+
+<p>Las cuentas de GitHub son gratuitas para una cantidad ilimitada de repositorios públicos. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.</p>
+
+<p>Regístrate por una cuenta gratuita de Github en https://github.com/join.</p>
+
+<p>Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y línea de comandos unificada, o simplemente como una interfaz de línea de comandos independiente.</p>
+
+<h2>Interactuando con repositorios</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li><a href="https://guides.github.com/overviews/flow/">El flujo web de GitHub</a></li>
+<li>GUIs de GitHub para Mac, Windows</li>
+<li>Línea de Comandos</li>
+</ul>
+
+
+<h2>Conociendo Git y GitHub</h2>
+
+<h3>Resumen</h3>
+
+<p>*Inicialización de Repositorios
+  * Nuevo proyecto y nuevo repositorio
+  * Repositorio basado en contenido existente
+  * Por medio de la interfaz web
+  * Interfaz web y cliente GUI</p>
+
+<h2>Adquiriendo repositorios</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Clonar desde la web (botón de Clonar en Escritorio)</li>
+<li>Clonar a través de lista de repositorio personal en GitHub de Escritorio</li>
+<li>Explicación completa de "copy"</li>
+</ul>
+
+
+<h2>Fundamentos de control de versiones</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Commits
+
+<ul>
+<li>Marcador de historial para archivo(s), cambio(s)</li>
+<li>Registro de autor, tiempo y mensaje</li>
+</ul>
+</li>
+<li>Ramas
+
+<ul>
+<li>Contenedor para commits agrupados</li>
+<li>Medios simples para integrar cambios</li>
+<li>Posibilidades de revisión de código más limpias</li>
+</ul>
+</li>
+<li>GitHub, repositorios locales</li>
+</ul>
+
+
+<h2>Interacción con repositorios de GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Commits (GitHub.com)
+
+<ul>
+<li>Pasos de Acción (Crear, Editar, Eliminar, Mover)</li>
+<li>Mensajes de commit</li>
+<li>Página de listado en GitHub</li>
+</ul>
+</li>
+<li>Ramas (GitHub.com)
+
+<ul>
+<li>Menú de selección</li>
+<li>Página de listado</li>
+<li>Vista de comparación</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Interacción con repositorio local</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Cambios (con editor de texto)</li>
+<li>Comparación (diff mediante GHfD)</li>
+<li>Commits</li>
+<li>Ramas</li>
+<li>Historial</li>
+<li><p>Sincronización (GHfD)</p></li>
+<li><p>Commits (GitHub para Escritorio)</p>
+
+<ul>
+<li>Administración de archivo en el sistema, revisión de resultados</li>
+<li>Rastreo a nivel de línea</li>
+<li>Agrupando archivos</li>
+<li>Sincronizando commits locales</li>
+</ul>
+</li>
+<li>Ramas (GitHub para Escritorio)
+
+<ul>
+<li>Crear</li>
+<li>Modificar</li>
+<li>Publicar</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Flujo de trabajo en GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Forking
+
+<ul>
+<li><a href="https://guides.github.com/overviews/forking/">Guía para hacer Forking</a></li>
+<li>Razones para hacer forks</li>
+<li>Lo que fomenta</li>
+<li>Cómo se aísla</li>
+<li>Manteniéndose al día (¿demasiado avanzado?)</li>
+<li>Original (base) y Fork (copia individual)</li>
+</ul>
+</li>
+<li>El flujo de GitHub
+
+<ul>
+<li>Ramas</li>
+<li>Commit</li>
+<li>Comparar</li>
+<li>Pull Request</li>
+<li>Discusión</li>
+<li>GIF Animado</li>
+<li>Conversación de revisión de código línea por línea</li>
+<li>Clonar localmente con GHfD (opcional)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Visualizaciones en GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Comparando/Diff-ing
+
+<ul>
+<li>Código</li>
+<li>Prosa</li>
+<li>Imágenes</li>
+<li>Mapas</li>
+<li>Hojas de cálculo</li>
+<li>Modelos 3D</li>
+</ul>
+</li>
+<li>Vista de rama</li>
+<li>Posiciones de rama: Adelante/Detrás</li>
+<li>Gráfica de red</li>
+<li>Gráfica de actividad</li>
+</ul>
+
+
+<h2>Wikis de GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Autoría de documentación rápida para repositorios</li>
+<li>Repositorio independiente</li>
+<li>Acceso fácil desde navegación de repositorio</li>
+</ul>
+
+
+<h2>Páginas de GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Página web para tu repositorio</li>
+<li>Página web para tu cuenta</li>
+<li>Crear, editar, lanzar desde GitHub</li>
+</ul>
+
+
+<h2>Características de GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>Notificaciones</li>
+<li>Observando repositorios</li>
+<li>Destacando ("starring") repositorios</li>
+<li>Gist</li>
+<li>Markdown al estilo GitHub
+
+<ul>
+<li>Lo esencial</li>
+<li>Emoji</li>
+<li>Lista de verificación (Issues, Gists)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Atajos de GitHub</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li><code>/</code> barra de comandos</li>
+<li><code>?</code> ayuda</li>
+<li><code>t</code> búsqueda de archivos difusa</li>
+</ul>
+
+
+<h2>Fundamentos de administración de proyectos</h2>
+
+<h3>Resumen</h3>
+
+<ul>
+<li>"Issues" en GitHub</li>
+<li>Hitos</li>
+<li>Red de trabajo</li>
+<li>Pulso</li>
+<li>Etiquetas, Lanzamientos</li>
+<li>Colaboradores</li>
+<li>Organizaciones</li>
+<li>Equipos</li>
+</ul>
+
+
+<h2>Características especiales de repositorio de GitHub</h2>
+
+<ul>
+<li>Contributing.md</li>
+<li>License.md
+
+<ul>
+<li>Durante la creación de un repositorio</li>
+<li><code>+</code> un archivo con repositorio existente (lista desplegable especial)</li>
+</ul>
+</li>
+<li>.gitignore
+
+<ul>
+<li>Durante la creación de un repositorio</li>
+<li><code>+</code> un archivo con repositorio existente (lista desplegable especial)</li>
+</ul>
+</li>
+<li>Readme.md
+
+<ul>
+<li>En raíz</li>
+<li>En subdirectorios</li>
+</ul>
+</li>
+</ul>
+
+
+      </span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="text-left">
+          <!-- <li>&copy; 2015 <span>GitHub</span>, Inc.</li> -->
+          <li>&copy; 2015 <span>OECD</span> STI</li>
+          <!-- <li><a href="https://github.com/site/terms">Terms</a></li>
+          <li><a href="https://training.github.com/kit/license.html">License</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+          <li><a href="https://training.github.com/contact">Contact</a></li> 
+          -->
+          <li><a href="http://www.oecd.org/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <!-- <a href="http://www.oecd.org/"><span class="mega-octicon octicon-mark-github"></span></a> -->
+        <a href="http://www.oecd.org"><img src="/kit/images/OECD_grey.png", width = 80></a>
+      </div>
+
+      <div class="col-md-5">
+        <ul class="text-right">
+          <!-- <li><a href="https://twitter.com/oecd"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li> -->
+          <!--      
+          <li><a href="https://status.github.com">Status</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- <script src="../_javascript/workbook.js"></script> -->
+
+</html>

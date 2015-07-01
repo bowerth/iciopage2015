@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ICIO Indicators</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../_stylesheets/page.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../assets/vendor/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+
+
+  <!--Scrollsnap-->
+  <script src="../_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+  <script src="../_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+  <script src="../_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
+
+  <!--Curriculum setup JS-->
+  <script src="../_javascript/curriculum.js"></script>
+
+  <!--Curriculum special styling-->
+  <link rel="stylesheet" href="../assets/vendor/octicons/octicons/octicons.css" type="text/css" />
+  <link rel="stylesheet" href="../_stylesheets/curriculum.css" type="text/css" />
+
+  <!-- google analytics async -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-19']);
+  _gaq.push(['_setDomainName', 'github.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body  data-spy="scroll" data-target="#toc">
+  <header class="colorful">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-2">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="logo"><a href="/" data-escp="">ICIO Calculation</a></div>
+      </div>
+
+      <div class="col-md-9 col-sm-10">
+        <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+           <!-- <li><a href="/trainers/">Trainers</a></li>
+            <li><a href="/classes/">Classes</a></li>
+            <li><a href="/schedule/">Schedule</a></li> -->
+            <li><a class="active" href="/kit/">Kit</a></li>
+           <!-- <li><a href="/contact/">Contact</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+      <h2>Subversion to Git Migration</h2>
+      <p>When migrating from Subversion to Git, there’s a vocabulary and command set to learn, in addition to the new capabilities only afforded by Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.</p>
+    
+
+
+    
+  </div>
+</header>
+
+
+  
+
+
+  <div class="container">
+  <div class="cheat-sheet">
+    
+
+<div class="col-md-6">
+<h2>Migrating</h2>
+
+<h3>GitHub importer</h3>
+
+<p>For Internet-accessible projects, GitHub.com provides Importer for automatic migration and repository creation from Subversion, Team Foundation Server, Mercurial, or alternatively-hosted Git version controlled projects.</p>
+
+<p>The process is as simple, needing only you to sign into your GitHub account, if you aren’t already, entering your existing project’s version control URL in the repository field, and initiating the conversion.</p>
+
+<p>Depending on the detected version control system, Importer may request additional information for migration. This includes a mapping file for associating Subversion usernames with Git fields.</p>
+
+<p>Begin migrating repositories by visiting the Importer home page:</p>
+
+<p><a href="https://importer.github.com">https://importer.github.com</a></p>
+
+<h3>SVN2Git Utility</h3>
+
+<p>When access limitations or non-public Subversion repositories need porting to Git, the SVN2Git utility is the command line utility of choice and provides control through every step of the process.</p>
+
+<p>Subversion presents distinct differences in structure to that of a Git repository, and SVN2Git provides the flexibility and configuration for traditional and custom Subversion layouts. This ensures the resulting Git repository aligns with standard best practices for commits, branches, and tags for the entire project’s history.</p>
+
+<p>Notable features of SVN2Git include:</p>
+
+<ul>
+<li>Converting all SVN conventions to traditional Git structure</li>
+<li>Providing SVN users field to  name and email data in Git commits</li>
+<li>Permiting exclusion patterns for precise Git repository content</li>
+</ul>
+
+
+<p>Learn more about SVN2Git at the project’s official home page:</p>
+
+<p><a href="https://github.com/nirvdrum/svn2git">https://github.com/nirvdrum/svn2git</a></p>
+
+</div>
+
+
+
+
+<div class="col-md-6">
+<h2>Bridging</h2>
+
+<h3>Leveraging Git’s support of SVN</h3>
+
+<p>Often times, during a transition to Git, the Subversion infrastructure remains in place while users become acquianted with local Git repository interactions, local workflows, and desktop applications.</p>
+
+<p>The <code>git svn</code> command permits users to synchronize with a centralized Subversion repository host while taking advantage of all the benefits local Git  command line and graphical clients have to offer.</p>
+
+<p>To acquire a Subversion repository as a resulting local Git repository, download the project in its entirety with this command:</p>
+
+<pre><code>git svn clone [svn-repo-url] --std-layout
+</code></pre>
+
+<p>Make certain you are familiar with the targeted Subversion repository’s structure and whether it follows the standard layout or not. For non-traditional <code>trunk</code>, <code>branches</code>, and <code>tags</code> layouts, the following option switches should be specified during the <code>svn clone</code>:</p>
+
+<ul>
+<li><code>T [trunk]</code> for alternate main source convention</li>
+<li><code>b [branches]</code> for alternate branch location</li>
+<li><code>t [tags]</code> for alternate tag structure location</li>
+</ul>
+
+
+<p>Once the clone operation completes, you can proceed with any local Git interactions on the command line or with graphical clients.</p>
+
+<h3>Synchronizing with Subversion</h3>
+
+<p>Publishing local Git history back to a central Subversion repository acquired with git svn clone is performed with one command:</p>
+
+<pre><code>git svn dcommit
+</code></pre>
+
+<p>If the hosted Subversion repository’s history possesses commits not yet in the local Git repository,  the <code>dcommit</code> operation will be rejected until the commits are acquired with this command:</p>
+
+<pre><code>git svn rebase
+</code></pre>
+
+<p>Keep in mind this action rewrites your local Git history and your commit identifiers will be different.</p>
+
+</div>
+
+
+<h2>Understanding</h2>
+
+<p>Subversion and Git share similar vocabularies, but the commonality often is only is command names. Behavior and functionality are quite distinct given the unique qualities Git provides as a distributed version control system when compared to the centralized aspects of Subversion.</p>
+
+<table>
+<thead>
+<tr>
+<th> SVN command     </th>
+<th> Git command </th>
+<th> Git behavior                                                          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>status</code>        </td>
+<td> <code>status</code>    </td>
+<td> Report the state of working tree                                      </td>
+</tr>
+<tr>
+<td> <code>add</code>           </td>
+<td> <code>add</code>       </td>
+<td> Required for each path before making a commit                         </td>
+</tr>
+<tr>
+<td> <code>commit</code>        </td>
+<td> <code>commit</code>     </td>
+<td> Store prepared changes in local revision history                      </td>
+</tr>
+<tr>
+<td> <code>rm</code>, <code>delete</code>   </td>
+<td> <code>rm</code>        </td>
+<td> Prepare paths for deletion in next commit                             </td>
+</tr>
+<tr>
+<td> <code>move</code>          </td>
+<td> <code>mv</code>        </td>
+<td> Prepare relocated content for next commit                             </td>
+</tr>
+<tr>
+<td> <code>checkout</code>      </td>
+<td> <code>clone</code>     </td>
+<td> Acquire the entire history of a project locally for the first tim     </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>branch</code>    </td>
+<td> Create local context for commits                                      </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>merge</code>     </td>
+<td> Join branch histories and changes to working tree                     </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>log</code>       </td>
+<td> No network required                                                   </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>push</code>      </td>
+<td> Upload commit history to GitHub/centralized Git host                  </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>pull</code>      </td>
+<td> Download and integrate GitHub repository history with local on        </td>
+</tr>
+<tr>
+<td>                 </td>
+<td> <code>fetch</code>     </td>
+<td> Download GitHub repository history with no other action               </td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="text-left">
+          <!-- <li>&copy; 2015 <span>GitHub</span>, Inc.</li> -->
+          <li>&copy; 2015 <span>OECD</span> STI</li>
+          <!-- <li><a href="https://github.com/site/terms">Terms</a></li>
+          <li><a href="https://training.github.com/kit/license.html">License</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+          <li><a href="https://training.github.com/contact">Contact</a></li> 
+          -->
+          <li><a href="http://www.oecd.org/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <!-- <a href="http://www.oecd.org/"><span class="mega-octicon octicon-mark-github"></span></a> -->
+        <a href="http://www.oecd.org"><img src="/kit/images/OECD_grey.png", width = 80></a>
+      </div>
+
+      <div class="col-md-5">
+        <ul class="text-right">
+          <!-- <li><a href="https://twitter.com/oecd"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li> -->
+          <!--      
+          <li><a href="https://status.github.com">Status</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+</html>
