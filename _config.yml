@@ -33,4 +33,6 @@ sass:
 # Custom site configuration
 lang: en
 
-baseurl: /kit
+# baseurl: /kit
+# baseurl: /icioapp2015
+baseurl:
