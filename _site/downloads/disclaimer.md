@@ -3,7 +3,7 @@
 ## General Terms and Conditions
 
 This website is hosted by the OECD Directorate for Science, Technology
-and Industry. It is responsible for the content of this site. The
+and Innovation. It is responsible for the content of this site. The
 information published on this website have not been reviewed by the
 Organisation and do not necessarily represent the official views of
 the Organisation or of the governments of its member countries.
