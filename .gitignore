@@ -6,5 +6,6 @@
 /bin/
 /.bundle/
 .sass-cache/
-*.*~
 _release
+
+*.*~
