@@ -16,7 +16,7 @@ non-commercial purposes, on condition that OECD is identified as the
 original author. No rights may be derived from the content of these
 information, however. For uses other than that stated above, please
 contact
-stan.contact (at) oecd.org
+stan.contact(at)oecd.org
 
 #### Limitation of Liability
 
@@ -31,7 +31,7 @@ The directorate cannot be held liable, however, for direct
 or indirect loss occurring as a result of the information on
 this site. Please notify the directorate of any inaccuracies
 or incomplete information:
-stan.contact (at) oecd.org
+stan.contact(at)oecd.org
 
 The content of this site can be amended, changed or supplemented at
 any time without notification or announcement. The directorate does
