@@ -7,5 +7,7 @@
 /.bundle/
 .sass-cache/
 _release
+/rmarkdown/co2intensity
+/rmarkdown/embodiedco2
 
 *.*~

@@ -1,0 +1,77 @@
+---
+title: "Embodied CO2 Emissions by partner country"
+runtime: shiny
+output: html_document
+---
+
+
+```{r, echo = FALSE}
+## rmarkdown::run(file.path(dbpath, "GitHub", "jekyll", "iciopage2015", "rmarkdown", "embodiedco2viz", "index.Rmd"))
+## C:\Temp\Dropbox\2015sut-io\1_datasources\10_IEA\CO2\Rdata\DATA.co2inttotal.Rdata
+## https://www.dropbox.com/s/2bikm2x5tjfv9jx/DATA.co2inttotal.Rdata?dl=0
+
+## setwd("~/Dropbox/GitHub/jekyll/iciopage2015/rmarkdown/embodiedco2viz/")
+load(file.path("data", "DATA.embodiedco2.Rdata")) # created from iciopage2015\rmarkdown\embodiedco2\embodiedco2.Rmd
+
+data_df <- DATA.embodiedco2
+
+twitterblue <- rgb(red = 66, green = 139, blue = 202, maxColorValue = 255)
+colors <- colorRampPalette(c("grey20", twitterblue))(2)
+
+library(shiny)
+library(ggplot2)
+
+shinyApp(
+
+  ui = fluidPage(
+
+      inputPanel(
+          selectInput("cou", "Country (vertical):",
+                      choices = unique(data_df$cou),
+                      selected = c("AUS", "AUT"),
+                      multiple = TRUE
+                      )
+         ,
+          selectInput("par", "Partner (horizontal):",
+                      choices = unique(data_df$par),
+                      selected = c("BEL", "CAN"),
+                      multiple = TRUE
+                      )
+         ,
+          selectInput("var", "Variable (colour):",
+                      choices = c("FD_CO2", "PROD_CO2"), # unique(data_df$var),
+                      selected = c("FD_CO2", "PROD_CO2"),
+                      multiple = TRUE
+                      )
+      )
+     ## ,
+     ##   list(
+     ##       shiny::p("List:", a(href = "http://www.oecd.org/sti/ind/ICIO2015_Industries_Items.pdf", "ICIO 2015 Industry Items"))
+     ##   )
+      ,
+      plotOutput("barplot")
+  ),
+
+  server = function(input, output) {
+
+    output$barplot <- renderPlot({
+
+        ## data_plot <- reshape2::melt(data_mat[, input$cou, input$ind], drop = FALSE)
+        data_plot <- subset(data_df, cou %in% input$cou & par %in% input$par & var %in% input$var)
+        ## names(data_plot) <- c("year", "cou", "ind", "value")
+
+        ggplot(data = data_plot) +
+            geom_bar(aes(x = year, y = value, fill = var), width = 0.8, stat = "identity", position = "dodge") +
+                facet_grid(cou ~ par) +
+                    scale_fill_manual(values = c("gray20", twitterblue)) +
+                        guides(fill = guide_legend(title = "")) +
+                            labs(title = NULL, x = "Partner", y = "Country (values: Mt CO2)") +
+                                theme(legend.position = "top")
+
+    })
+
+  },
+
+  options = list(height = 530) # 640 w/o inputPanel
+)
+```

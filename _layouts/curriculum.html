@@ -3,6 +3,8 @@ layout: site
 leadingpath: ../
 ---
 
+<div class="container">
+
 <!-- Modal -->
 <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -106,7 +108,9 @@ leadingpath: ../
     </div>
   </div>
 
+
   {{ content }}
+
 </div>
 
 
@@ -117,17 +121,19 @@ leadingpath: ../
       <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
         <li></li>
       </ul>
-      <ul class="nav display-controls">
-        <li>
-          <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
-          <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
-        </li>
-        <li>
-          <div class="timer-toggle"></div>
-          <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
-          <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label>
-        </li>
-      </ul>
+      <!-- <ul class="nav display-controls"> -->
+      <!--   <li> -->
+      <!--     <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true"> -->
+      <!--     <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label> -->
+      <!--   </li> -->
+      <!--   <li> -->
+      <!--     <div class="timer-toggle"></div> -->
+      <!--     <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true"> -->
+      <!--     <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label> -->
+      <!--   </li> -->
+      <!-- </ul> -->
     </div>
   </div>
+</div>
+
 </div>
