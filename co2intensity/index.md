@@ -31,7 +31,8 @@ The CO2 emission factors EF used in the OECD ICIO system to estimate consumption
 
 
 <!-- <iframe src="http://10.101.26.220:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe> -->
-<iframe src="http://www.icio.oecd.org:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe>
+<!-- <iframe src="http://www.icio.oecd.org:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe> -->
+<iframe src="http://oecd-icio.cloudapp.net:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe>
 
 ## Comparision of OECD with IEA
 

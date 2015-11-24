@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>OECD ICIO</title>
+  <title>ICIO Indicators</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../_stylesheets/page.css">
 
@@ -69,15 +69,10 @@
       <div class="col-md-9 col-sm-10">
         <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a class="active" href="/kit/">Kit</a></li> -->
-            <li><a href="/">Home</a></li>
-            <li><a class="active" href="/embodiedco2/">CO2</a></li>
-            <li><a href="/disclaimer.html">Disclaimer</a></li>
-            <!-- <li><a href="/embodiedco2/">Embodied CO2</a></li> -->
-            <!-- <li><a href="/co2intensity/">CO2 Intensity</a></li> -->
             <!-- <li><a href="/trainers/">Trainers</a></li> -->
             <!-- <li><a href="/classes/">Classes</a></li> -->
             <!-- <li><a href="/schedule/">Schedule</a></li> -->
+            <!-- <li><a class="active" href="/kit/">Kit</a></li> -->
             <!-- <li><a href="/contact/">Contact</a></li> -->
           </ul>
         </div>
@@ -86,7 +81,7 @@
 
     
       <h2>ICIO CO2 Intensity</h2>
-      <p>CO2 Emission Intensity Indicators from the Inter-Country Input-Output (ICIO) framework</p>
+      <p>Visualizing CO2 intensity data from the Inter-Country Input-Output (ICIO) framework</p>
     
 
 
@@ -204,22 +199,18 @@
   </div>
 
 
-  <!-- ## About this app -->
+  <h2>About this app</h2>
 
-
-
-
-<!-- The publication by the OECD of [embodied CO2 indicators](http://oe.cd/io-co2) has fostered new demand for specific tailored calculations beyond the scope of the OECD's resources. -->
-
+<p>The publication by the OECD of <a href="http://oe.cd/io-co2">embodied CO2 indicators</a> has fostered new demand for specific tailored calculations beyond the scope of the OECD's resources.</p>
 
 <h2>About the data</h2>
 
-<p>The CO2 emission factors EF used in the OECD ICIO system to estimate consumption-based emissions are calculated from the <a href="http://www.iea.org/statistics/topics/co2emissions/">International Energy Agency (IEA) CO2 emissions from fuel combustion</a>. In a first step, production-based CO2 emissions by industry are estimated from the IEA data. The differences in the country totals between the IEA's sectoral approach data and the OECD's production-based data, see "Comparison of OECD with IEA" below, are due to the reallocation of emissions associated with non-resident fuel purchases. In a second step, emission factors EFtr[i] for industry i are calculated for each country r and year t as CO2 emissions per unit of industry output. These emission factors can be visualized below in order to inform the interested user about the data used in the calculations for embodied CO2 emissions.</p>
+<p>The CO2 emission factors EF used in the OECD ICIO system to estimate consumption-based emissions are calculated from the <a href="http://www.iea.org/statistics/topics/co2emissions/">International Energy Agency (IEA) CO2 emissions from fuel combustion</a>. In a first step, production-based CO2 emissions by industry are estimated from the IEA data. The differences in the country totals between the IEA's sectoral approach data and the OECD's production-based data, see here, are due to the reallocation of emissions associated with non-resident fuel purchases. In a second step, emission factors EFtr[i] for industry i are calculated for each country r and year t as CO2 emissions per unit of industry output. These emission factors can be visualized below in order to inform the interested user about the data used in the calculations for embodied CO2 emissions.</p>
 
-<!-- <iframe src="http://10.101.26.220:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe> -->
+<iframe src="http://10.101.26.220:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe>
 
 
-<iframe src="http://www.icio.oecd.org:3838/co2intensityviz/" width = "100%" style="border: 0px; height: 53em"></iframe>
+<!-- <iframe src="http://oecd-icio.cloudapp.net:3838/co2app/" width = "100%" style="border: 0px; height: 52em"></iframe> -->
 
 
 <h2>Comparision of OECD with IEA</h2>
@@ -239,23 +230,22 @@
       <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
         <li></li>
       </ul>
-      <!-- <ul class="nav display-controls"> -->
-      <!--   <li> -->
-      <!--     <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true"> -->
-      <!--     <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label> -->
-      <!--   </li> -->
-      <!--   <li> -->
-      <!--     <div class="timer-toggle"></div> -->
-      <!--     <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true"> -->
-      <!--     <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label> -->
-      <!--   </li> -->
-      <!-- </ul> -->
+      <ul class="nav display-controls">
+        <li>
+          <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
+          <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+        </li>
+        <li>
+          <div class="timer-toggle"></div>
+          <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
+          <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 
 </div>
-
 
   <!-- Shared footer for all OECD sites --><!-- /oecd-footer default-->
 <footer class="oecd-footer">
