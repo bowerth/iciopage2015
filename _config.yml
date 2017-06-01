@@ -21,6 +21,7 @@ exclude:
 - script
 - vendor
 - rmarkdown
+- CNAME
 
 include:
 - _stylesheets
